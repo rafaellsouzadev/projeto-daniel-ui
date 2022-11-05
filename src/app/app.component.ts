@@ -36,10 +36,8 @@ export class AppComponent {
     this.formularioSerive.salvarFormulario(this.form.value)
     .subscribe(data => {          
       console.log(data);
-    });
-     if (Error === null){
       alert("Formulario enviado.");
-     }
+    });     
     this.form.reset(); 
     
   }
